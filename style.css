@@ -1,0 +1,298 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#003366;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* Navigation */
+
+nav{
+    background:#00509d;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* Hero Image */
+
+.hero img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+/* Sections */
+
+section{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+section h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+section p{
+    text-align:center;
+    font-size:18px;
+}
+
+/* Services */
+
+.services{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.service-box{
+    background:white;
+    width:280px;
+    margin:15px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.service-box img{
+    width:100%;
+    border-radius:10px;
+}
+
+.service-box h3{
+    margin:15px 0;
+    color:#003366;
+}
+
+/* Room Cards */
+
+.rooms{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.room{
+    width:320px;
+    background:white;
+    margin:20px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+.room img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.room h3{
+    text-align:center;
+    padding:15px;
+}
+
+.room p{
+    padding:0 15px 15px;
+}
+
+.room button{
+    display:block;
+    width:80%;
+    margin:15px auto 20px;
+    padding:12px;
+    background:#003366;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.room button:hover{
+    background:#ff9900;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#003366;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+table img{
+    width:200px;
+}
+
+/* Contact Form */
+
+form{
+    width:500px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+form label{
+    font-weight:bold;
+}
+
+form input,
+form select,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+form textarea{
+    resize:none;
+}
+
+form input[type=submit]{
+    background:#003366;
+    color:white;
+    cursor:pointer;
+    border:none;
+    font-size:18px;
+}
+
+form input[type=submit]:hover{
+    background:#ff9900;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Buttons */
+
+button{
+    background:#003366;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff9900;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.hero img{
+    height:250px;
+}
+
+.services{
+    flex-direction:column;
+    align-items:center;
+}
+
+.rooms{
+    flex-direction:column;
+    align-items:center;
+}
+
+form{
+    width:90%;
+}
+
+}
